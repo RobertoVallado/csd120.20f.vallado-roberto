@@ -2,4 +2,4 @@
 
 This repository contains my lab work for the Sault College course CSD120
 
-**Author**: <name here>
+**Author**: <Roberto Vallado>
