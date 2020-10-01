@@ -27,7 +27,19 @@
       </header>
       <main>
         <h1>Welcome to Roberto's CSD120 Website!</h1>
-
+        <a href="images/roberto_.jpg">
+          <img
+            src="images/roberto_.jpg"
+            alt="Roberto Vallado - author"
+            sizes="(max-width:500px) 150px, (max-width:800px) 300px"
+            srcset="
+              images/roberto_150.jpg 150w,
+              images/roberto_300.jpg 300w,
+              images/roberto_.jpg
+            "
+          />
+        </a>
+        <!-- what's up with the last parameter and the final size?? -->
         <p><b>Saludos!</b></p>
         <p>
           My name is Roberto Vallado. I am a former carpenter who truly enjoy
@@ -44,9 +56,16 @@
         </p>
 
         <h2>My Favourite Things</h2>
-        <a href="https://en.wikipedia.org/wiki/Language">
-          <img src="images/logo.png" alt="duolingo lenguajes" />
-        </a>
+
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/Language">
+            <img src="images/logo.png" alt="duolingo lenguajes" />
+          </a>
+          <figcaption>
+            <i>fig. 1</i> Popular language learning app mascot.
+          </figcaption>
+        </figure>
+
         <h3>Food</h3>
         <ol>
           <li><span title="Tradicional Mexican food">Tacos</span></li>
@@ -83,6 +102,8 @@
             >Roberto Vallado</a
           >
         </p>
+        <img src="images/sc-logo.png" alt="Sault College logo">
+        <!-- screen densities logo -->
       </footer>
       <a href="#top" title="Back to top">◤</a>
     </div>
