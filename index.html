@@ -1,207 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Roberto Vallado" />
+    <meta name="description" content="CSD120 Lab - Personal Website" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>CSD120-Roberto!</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Roberto Vallado" />
-  <meta name="description" content="CSD120 Lab - Personal Website" />
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-  <title>CSD120-Roberto!</title>
-</head>
-
-<body>
-  <div class="width-wrap">
-    <header id="top">
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="links.html">Links</a>
-          </li>
-          <li>
-            <a href="glossary.html">Glossary</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Welcome to Roberto's CSD120 Website!</h1>
-      <a href="images/roberto_.jpg">
-        <img src="images/roberto_300.jpg" alt="Roberto Vallado, author." sizes="(max-width:500px) 150px, 300px"
-          srcset="images/roberto_150.jpg 150w, images/roberto_300.jpg 300w" />
-      </a>
-      <p><b>Saludos!</b></p>
-      <p>
-        My name is Roberto Vallado. I am a former carpenter who truly enjoy
-        learning new things and loves food!
-      </p>
-
-      <p>
-        I truly believe food comes as: <code>-favorite='TRUE'</code> in my
-        default personal source code.
-      </p>
-      <p>
-        I currently speak four languages, but I hope to live long enough to
-        learn more languages in the future.
-      </p>
-
-      <table>
-        <caption>
-          Table 1. Current Courses
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col" rowspan="2">Term</th>
-            <th scope="col" colspan="3">Course</th>
-          </tr>
-          <tr>
-            <th scope="col">Code</th>
-            <th scope="col">Name</th>
-            <th scope="col">Hrs/Week</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="colgroup" rowspan="5">Fall</th>
-            <td>CSD105</td>
-            <td>Python</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>CSD120</td>
-            <td>Introduction to Web Development</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>CSO104</td>
-            <td>Introduction to Operating Systems and LAN</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>MTH122</td>
-            <td>Computer Mathematics</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>TNY130</td>
-            <td>Technology in Society</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <th scope="colgroup" rowspan="5">Winter</th>
-            <td>CSA103</td>
-            <td>Business Applications I</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>CSD102</td>
-            <td>Programming Using C++</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>CSD212</td>
-            <td>Web Scripting Languages</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>CSO102</td>
-            <td>Introduction to Linux</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>CST104</td>
-            <td>PC Hardware and Networking</td>
-            <td>5</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th scope="row" colspan="3">Total</th>
-            <td>38</td>
-          </tr>
-        </tfoot>
-      </table>
-
-      <h2>My Favourite Things</h2>
-
-      <figure>
-        <a href="https://en.wikipedia.org/wiki/Language">
-          <img src="images/logo.png" alt="duolingo lenguajes" />
+  <body>
+    <div class="width-wrap">
+      <header id="top">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="links.html">Links</a>
+            </li>
+            <li>
+              <a href="glossary.html">Glossary</a>
+            </li>
+            <li>
+              <a href="survey.html">Survey</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>Welcome to Roberto's CSD120 Website!</h1>
+        <a href="images/roberto_.jpg">
+          <img
+            src="images/roberto_300.jpg"
+            alt="Roberto Vallado, author."
+            sizes="(max-width:500px) 150px, 300px"
+            srcset="images/roberto_150.jpg 150w, images/roberto_300.jpg 300w"
+          />
         </a>
-        <figcaption>
-          <i>fig. 1</i> Popular language learning app mascot.
-        </figcaption>
-      </figure>
-
-      <h3>Food</h3>
-      <ol>
-        <li><span title="Tradicional Mexican food">Tacos</span></li>
-        <li>
-          <span title="Brazilian beans stew">Feijoada</span>
-        </li>
-        <li><span title="Quebec's gift to the planet">Poutine</span></li>
-      </ol>
-      <h3>Haiku</h3>
-
-      <p>
-        Summer picnic time <br />
-        Joyish summer gathering <br />
-        Plenty food and friends <br />
-        <cite>
-          by <span class="author"><b>James Edward Lee</b> </span>
-        </cite>
-      </p>
-      <h3>Public Domain Audiobook</h3>
-      <audio controls>
-        <source
-          src="http://www.archive.org/download/poemas_portugues_001_librivox/08_amorefogoqueardesemsever_08_camoes.mp3"
-          type="audio/mp3" lang="pt" />
-        <source
-          src="https://archive.org/download/poemas_portugues_001_librivox/08_amorefogoqueardesemsever_08_camoes.ogg"
-          type="audio/ogg" lang="pt" />
+        <p><b>Saludos!</b></p>
         <p>
-          Your browser doesn't support HTML5 audio. You could Download the
-          audio
-          <a href="https://archive.org/download/poemas_portugues_001_librivox/08_amorefogoqueardesemsever_08_camoes_esshigh.json.gz"
-            hreflang="pt" download>here</a>, instead.
+          My name is Roberto Vallado. I am a former carpenter who truly enjoy
+          learning new things and loves food!
         </p>
-      </audio>
-      <h3>YouTube Video</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Hhm7aWp8gvc"
-        title="Hasta la vista baby video by Arnold Schwarzenegger from Terminator 2"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </main>
-    <footer>
-      <hr />
-      <blockquote>
-        “When you arise in the morning, give thanks for the morning light, for
-        your life and strength.
-        <!--  Found me! -->
-        Give thanks for your food and the joy of living, If you see no reason
-        for giving thanks, the fault lies with yourself.”
-        <br />
-        <cite> &#8212; <span class="author">Tecumseh</span></cite>
-      </blockquote>
-      <p>
-        &copy; 2020
-        <a href="mailto:20017482@saultcollege.ca?subject=Message%20from%20CSD120%20Website">Roberto Vallado</a>
-      </p>
-      <picture>
-        <source type="image/svg+xml" srcset="images/sc-logo.svg" />
-        <img src="images/sc-logo.png" width="70" srcset="
+
+        <p>
+          I truly believe food comes as: <code>-favorite='TRUE'</code> in my
+          default personal source code.
+        </p>
+        <p>
+          I currently speak four languages, but I hope to live long enough to
+          learn more languages in the future.
+        </p>
+
+        <table>
+          <caption>
+            Table 1. Current Courses
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col" rowspan="2">Term</th>
+              <th scope="col" colspan="3">Course</th>
+            </tr>
+            <tr>
+              <th scope="col">Code</th>
+              <th scope="col">Name</th>
+              <th scope="col">Hrs/Week</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="colgroup" rowspan="5">Fall</th>
+              <td>CSD105</td>
+              <td>Python</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>CSD120</td>
+              <td>Introduction to Web Development</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CSO104</td>
+              <td>Introduction to Operating Systems and LAN</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>MTH122</td>
+              <td>Computer Mathematics</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>TNY130</td>
+              <td>Technology in Society</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="colgroup" rowspan="5">Winter</th>
+              <td>CSA103</td>
+              <td>Business Applications I</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CSD102</td>
+              <td>Programming Using C++</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>CSD212</td>
+              <td>Web Scripting Languages</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CSO102</td>
+              <td>Introduction to Linux</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CST104</td>
+              <td>PC Hardware and Networking</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="3">Total</th>
+              <td>38</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <h2>My Favourite Things</h2>
+
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/Language">
+            <img src="images/logo.png" alt="duolingo lenguajes" />
+          </a>
+          <figcaption>
+            <i>fig. 1</i> Popular language learning app mascot.
+          </figcaption>
+        </figure>
+
+        <h3>Food</h3>
+        <ol>
+          <li><span title="Tradicional Mexican food">Tacos</span></li>
+          <li>
+            <span title="Brazilian beans stew">Feijoada</span>
+          </li>
+          <li><span title="Quebec's gift to the planet">Poutine</span></li>
+        </ol>
+        <h3>Haiku</h3>
+
+        <p>
+          Summer picnic time <br />
+          Joyish summer gathering <br />
+          Plenty food and friends <br />
+          <cite>
+            by <span class="author"><b>James Edward Lee</b> </span>
+          </cite>
+        </p>
+        <h3>Public Domain Audiobook</h3>
+        <audio controls>
+          <source
+            src="http://www.archive.org/download/poemas_portugues_001_librivox/08_amorefogoqueardesemsever_08_camoes.mp3"
+            type="audio/mp3"
+            lang="pt"
+          />
+          <source
+            src="https://archive.org/download/poemas_portugues_001_librivox/08_amorefogoqueardesemsever_08_camoes.ogg"
+            type="audio/ogg"
+            lang="pt"
+          />
+          <p>
+            Your browser doesn't support HTML5 audio. You could Download the
+            audio
+            <a
+              href="https://archive.org/download/poemas_portugues_001_librivox/08_amorefogoqueardesemsever_08_camoes_esshigh.json.gz"
+              hreflang="pt"
+              download
+              >here</a
+            >, instead.
+          </p>
+        </audio>
+        <h3>YouTube Video</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Hhm7aWp8gvc"
+          title="Hasta la vista baby video by Arnold Schwarzenegger from Terminator 2"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </main>
+      <footer>
+        <hr />
+        <blockquote>
+          “When you arise in the morning, give thanks for the morning light, for
+          your life and strength.
+          <!--  Found me! -->
+          Give thanks for your food and the joy of living, If you see no reason
+          for giving thanks, the fault lies with yourself.”
+          <br />
+          <cite> &#8212; <span class="author">Tecumseh</span></cite>
+        </blockquote>
+        <p>
+          &copy; 2020
+          <a
+            href="mailto:20017482@saultcollege.ca?subject=Message%20from%20CSD120%20Website"
+            >Roberto Vallado</a
+          >
+        </p>
+        <picture>
+          <source type="image/svg+xml" srcset="images/sc-logo.svg" />
+          <img
+            src="images/sc-logo.png"
+            width="70"
+            srcset="
               images/sc-logo.png,
               images/sc-logo_105.png 1.5x,
               images/sc-logo_140.png 2x
-            " alt="Sault-College logo" />
-      </picture>
-    </footer>
-    <a href="#top" title="Back to top">◤</a>
-  </div>
-</body>
-
+            "
+            alt="Sault-College logo"
+          />
+        </picture>
+      </footer>
+      <a href="#top" title="Back to top">◤</a>
+    </div>
+  </body>
 </html>
