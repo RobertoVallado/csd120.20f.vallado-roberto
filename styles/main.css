@@ -1,0 +1,54 @@
+html {
+    box-sizing: border-box;
+    background-color: #710019;
+    color: inherit;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3 {
+   color: #391306 ;
+}
+
+a:link {
+    color: #870A30;
+}
+
+#top a {
+    color: #000C66;
+    text-decoration: none;
+}
+
+::selection {
+    background-color: #D43790;
+    color: #FFFFFF;
+}
+
+.width-wrap {
+    max-width: 960px;
+    margin: auto auto 3em;
+    padding: 0 2em 2em;
+    border-width: 1px;
+    border-style: none solid solid solid;
+    border-color: rgb(0,0,3);
+    background-color: #F9CCD3;
+}
+
+footer hr {
+    width: 50vw;
+    max-width: 890px;
+    min-width: 300px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border: none;
+    border-bottom: 3px dotted #710019;
+}
+
+dl dd :hover{
+    color:  #710019 ;
+    font-weight: bolder;
+   }
