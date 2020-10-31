@@ -1,6 +1,8 @@
+/* || SITEWIDE */
+
 html {
     box-sizing: border-box;
-    background-color: #710019;
+    background-color: #AE002B;
     color: inherit;
 }
 
@@ -10,23 +12,59 @@ html {
     box-sizing: inherit;
 }
 
-h1, h2, h3 {
-   color: #391306 ;
+h1,
+h2,
+h3 {
+    color: #800020;
 }
 
-a:link {
-    color: #870A30;
-}
-
-#top a {
-    color: #000C66;
-    text-decoration: none;
+a {
+    color: #FF2511;
 }
 
 ::selection {
-    background-color: #D43790;
+    background-color: #116530;
     color: #FFFFFF;
 }
+
+dt::after {
+    content: ":";
+    font-weight: bold;
+}
+
+/* || Header & Navbar   //Lab5 - Exercise 4  */
+
+header {
+    border-top: 4px solid rgb(0, 0, 1);
+    margin: 0 -2em 0;
+}
+
+header nav {
+    border-bottom: 1px dotted rgb(0, 0, 3);
+    margin: 0 2em 2em;
+}
+
+header li {
+    display: inline-block;
+    padding: 1em 1em 0.5em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    border-top: 4px solid rgb(0, 0, 3);
+    padding: 1em 1em 0.5em;
+    color: #116530;
+}
+
+nav a:hover {
+    border-top: 4px solid tomato;
+}
+
+/* || main div */
 
 .width-wrap {
     max-width: 960px;
@@ -34,9 +72,11 @@ a:link {
     padding: 0 2em 2em;
     border-width: 1px;
     border-style: none solid solid solid;
-    border-color: rgb(0,0,3);
+    border-color: rgb(0, 0, 3);
     background-color: #F9CCD3;
 }
+
+/* ||Footer */
 
 footer hr {
     width: 50vw;
@@ -47,8 +87,3 @@ footer hr {
     border: none;
     border-bottom: 3px dotted #710019;
 }
-
-dl dd :hover{
-    color:  #710019 ;
-    font-weight: bolder;
-   }
