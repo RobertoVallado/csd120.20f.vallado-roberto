@@ -3,13 +3,16 @@
 html {
     box-sizing: border-box;
     background-color: #AE002B;
-    color: inherit;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+}
+
+body{
+    margin-top: 0;
 }
 
 h1,
@@ -35,12 +38,12 @@ dt::after {
 /* || Header & Navbar   //Lab5 - Exercise 4  */
 
 header {
-    border-top: 4px solid rgb(0, 0, 1);
+    border-top: 4px solid rgb(0, 0, 0, 0.3);
     margin: 0 -2em 0;
 }
 
 header nav {
-    border-bottom: 1px dotted rgb(0, 0, 3);
+    border-bottom: 1px dotted rgb(0, 0, 0, 0.3);
     margin: 0 2em 2em;
 }
 
@@ -55,13 +58,13 @@ nav ul {
 }
 
 nav a {
-    border-top: 4px solid rgb(0, 0, 3);
+    border-top: 4px transparent rgb(0, 0, 0, 0.3);
     padding: 1em 1em 0.5em;
     color: #116530;
 }
 
 nav a:hover {
-    border-top: 4px solid tomato;
+    border-top: 4px solid #FF2511;
 }
 
 /* || main div */
@@ -72,7 +75,7 @@ nav a:hover {
     padding: 0 2em 2em;
     border-width: 1px;
     border-style: none solid solid solid;
-    border-color: rgb(0, 0, 3);
+    border-color: rgb(0, 0, 0, 0.3);
     background-color: #F9CCD3;
 }
 
