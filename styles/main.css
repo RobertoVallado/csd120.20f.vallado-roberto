@@ -11,7 +11,7 @@ html {
     box-sizing: inherit;
 }
 
-body{
+body {
     margin-top: 0;
 }
 
@@ -35,7 +35,7 @@ dt::after {
     font-weight: bold;
 }
 
-/* || Header & Navbar   //Lab5 - Exercise 4  */
+/* || Header & Navbar Layout  //Lab5 - Exercise 4  */
 
 header {
     border-top: 4px solid rgb(0, 0, 0, 0.3);
@@ -66,6 +66,33 @@ nav a {
 nav a:hover {
     border-top: 4px solid #FF2511;
 }
+
+/* || Table Style  //Lab5 - Exercise 5 */
+
+th,
+td {
+    padding: 0.3em 1em;
+}
+
+thead tr,
+tbody tr,
+tfoot tr {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+tr {
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* || Form Styling  //Lab5 - Exercise 6 */
+
+
+
+
 
 /* || main div */
 
