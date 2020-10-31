@@ -90,9 +90,28 @@ tr:nth-child(even) {
 
 /* || Form Styling  //Lab5 - Exercise 6 */
 
+label {
+    display: block;
+}
 
+fieldset label {
+    display: inline;
+}
 
+button[type="submit"] {
+    border: none;
+    padding: 1em 3em;
+    color: #FFFFFF;
+    background-color: #800020;
+}
 
+input:invalid {
+    background-color: #B3C0AE;
+}
+
+input:valid {
+    background-color: none;
+}
 
 /* || main div */
 
