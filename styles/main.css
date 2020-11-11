@@ -3,6 +3,7 @@
 html {
     box-sizing: border-box;
     background-color: #AE002B;
+    color: rgba(0,0,0,0.9);
 }
 
 *,
@@ -38,7 +39,7 @@ dt::after {
 /* || Header & Navbar Layout  //Lab5 - Exercise 4  */
 
 header {
-    border-top: 4px solid rgb(0, 0, 0, 0.3);
+    border-top: 4px solid rgb(0, 0, 0, 0.1);
     margin: 0 -2em 0;
 }
 
@@ -48,7 +49,7 @@ header nav {
 }
 
 header li {
-    display: inline-block;
+    display: inline;
     padding: 1em 1em 0.5em;
 }
 
@@ -58,8 +59,10 @@ nav ul {
 }
 
 nav a {
-    border-top: 4px transparent rgb(0, 0, 0, 0.3);
-    padding: 1em 1em 0.5em;
+    display: inline-block;
+    margin: -4px 1em 0;
+    border-top: 4px solid rgb(0, 0, 0, 0);
+    padding: 1em 0 0.5em;
     color: #116530;
 }
 
@@ -74,17 +77,19 @@ td {
     padding: 0.3em 1em;
 }
 
-thead tr,
-tbody tr,
-tfoot tr {
+thead tr th,
+thead tr td,
+tbody tr th,
+tfoot tr th,
+tfoot tr td {
     background-color: rgb(0, 0, 0, 0.2);
 }
 
-tr {
+tr td {
     background-color: rgb(0, 0, 0, 0.05);
 }
 
-tr:nth-child(even) {
+tr:nth-child(even) td {
     background-color: rgba(0, 0, 0, 0.15);
 }
 
@@ -98,7 +103,7 @@ fieldset label {
     display: inline;
 }
 
-button[type="submit"] {
+[type="submit"] {
     border: none;
     padding: 1em 3em;
     color: #FFFFFF;
@@ -117,7 +122,7 @@ input:valid {
 
 .width-wrap {
     max-width: 960px;
-    margin: auto auto 3em;
+    margin: 0 auto 3em;
     padding: 0 2em 2em;
     border-width: 1px;
     border-style: none solid solid solid;
