@@ -3,7 +3,7 @@
 html {
     box-sizing: border-box;
     background-color: #AE002B;
-    color: rgba(0,0,0,0.9);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 *,
@@ -42,7 +42,7 @@ h6 {
     font-family: 'Goldman', cursive;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -83,7 +83,7 @@ dt::after {
 
 .bio img {
     padding: 2%;
-    box-shadow:  10px 5px 5px #116530;
+    box-shadow: 10px 5px 5px #116530;
 }
 
 
@@ -214,6 +214,21 @@ header>nav a:hover {
 
 
 /* ||Footer */
+
+footer {
+    font-size: 75%;
+    text-align: center;
+
+}
+
+footer+a {
+    text-shadow: 5px 5px 5px #116530;
+}
+
+footer+a:hover {
+    text-decoration: none;
+
+}
 
 footer hr {
     width: 50vw;
