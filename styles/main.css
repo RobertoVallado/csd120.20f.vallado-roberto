@@ -24,7 +24,7 @@ h1 {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 16, 9, 1) 28%, rgba(255, 0, 0, 0) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-clip: text; 
+    background-clip: text;
 
 }
 
@@ -102,13 +102,19 @@ header nav {
 }
 
 header li {
-    display: inline;
+    /* display: inline; */
+    /* Lab7 1.2 */
+    list-style: none;
     padding: 1em 1em 0.5em;
+
 }
 
 nav ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    /* lab7 1.3 */
 }
 
 nav a {
@@ -173,6 +179,7 @@ input:valid {
 }
 
 /* || main div */
+/* >>>>CL-ASSES!!! */
 
 .width-wrap {
     max-width: 960px;
@@ -183,6 +190,56 @@ input:valid {
     border-color: rgb(0, 0, 0, 0.3);
     background-color: #F9CCD3;
 }
+
+.favourites {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.favourites h3 {
+    padding: 0 1rem 0 1rem;
+}
+
+.favourites div {
+    display: none;
+}
+
+.favourites [type="radio"] {
+    display: none;
+}
+
+.favourites input+label>h3 {
+    color: burlywood;
+    border-bottom: 3px solid rgb(0, 0, 0, 0);
+    margin-bottom: 0;
+}
+
+.favourites input+label>h3:hover {
+    border-bottom: 3px solid #FF2511;
+    color: #FF2511;
+    margin-bottom: 0;
+}
+
+.favourites input+label {
+    order: -1;
+    color: burlywood;
+}
+
+.favourites input:checked+label+div{
+    display: block;
+    width: 100%;
+    color: #800020;
+    background-color: gainsboro;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.favourites input:checked+label>h3 {
+    color: #800020;
+}
+
 
 /* LISTS ELEMENTS LAB-6 exercise 1 */
 
