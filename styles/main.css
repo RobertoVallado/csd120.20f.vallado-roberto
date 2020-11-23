@@ -24,7 +24,7 @@ h1 {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 16, 9, 1) 28%, rgba(255, 0, 0, 0) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-clip: text;
+    /* background-clip: text; */
 
 }
 
@@ -175,7 +175,7 @@ input:invalid {
 }
 
 input:valid {
-    background-color: none;
+    background-color: transparent;
 }
 
 /* || main div */
@@ -265,7 +265,36 @@ input:valid {
 }
 
 .gallery a:hover {
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.paperclip {
+    position: absolute;
+    top: -5%;
+    right: 0;
+    transform: rotate(-30deg);
+}
+
+a .paperclip {
+    background: none;
+    box-shadow: none;
+    width: 20%;
+}
+
+.bio a {
+    display: block;
+    position: relative;
+}
+
+[title|="Back to top"] {
+    position: sticky;
+    margin-left: -25px;
+    display: inline-block;
+    bottom: 10px;
+}
+
+[title|="Back to top"]:hover {
+    transform: rotate(45deg);
 }
 
 /* LISTS ELEMENTS LAB-6 exercise 1 */
