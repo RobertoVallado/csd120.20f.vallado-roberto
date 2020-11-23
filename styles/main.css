@@ -225,7 +225,7 @@ input:valid {
     color: burlywood;
 }
 
-.favourites input:checked+label+div{
+.favourites input:checked+label+div {
     display: block;
     width: 100%;
     color: #800020;
@@ -240,6 +240,33 @@ input:valid {
     color: #800020;
 }
 
+/* LAB 7.3 .gallery <div> */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.row-span-2 {
+    grid-row: 1 /span 2;
+
+}
+
+.gallery .col-span-2 {
+    grid-column: span 2;
+}
+
+.gallery a:hover {
+    transform: scale(1.1,1.1);
+}
 
 /* LISTS ELEMENTS LAB-6 exercise 1 */
 
