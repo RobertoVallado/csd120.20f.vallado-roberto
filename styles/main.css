@@ -69,8 +69,8 @@ dt::after {
 /* || div: "BIO" Lab 6 Exercise 4 */
 
 .bio {
-
-    column-count: 3;
+    column-width: 13em;
+    /* column-count: 3; */
     column-gap: 2em;
 
 }
@@ -242,7 +242,8 @@ input:valid {
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto, minmax(180px, 1fr));
     grid-gap: 10px;
 }
 
@@ -263,8 +264,20 @@ input:valid {
     grid-column: span 2;
 }
 
+.gallery a {
+    transition: transform 200ms;
+}
+
 .gallery a:hover {
     transform: scale(1.1, 1.1);
+}
+
+/* LAB 8.1.6 */
+
+@media screen and (max-width: 450px) {
+    .gallery .col-span-2 {
+        grid-column: span 1;
+    }
 }
 
 .paperclip {
@@ -281,7 +294,7 @@ a .paperclip {
 }
 
 .bio a {
-    display: block;
+    display: inline-block;
     position: relative;
 }
 
@@ -290,6 +303,7 @@ a .paperclip {
     margin-left: -25px;
     display: inline-block;
     bottom: 10px;
+    transition: transform 200ms;
 }
 
 [title|="Back to top"]:hover {
@@ -352,4 +366,39 @@ footer hr {
     margin-bottom: 2em;
     border: none;
     border-bottom: 3px dotted #710019;
+}
+
+/* LAB 8.2.1 */
+
+@media screen and (max-width: 520px) {
+
+    .bio table+thead,
+    tfoot,
+    th {
+        display: none;
+    }
+
+    .bio table td {
+        display: block;
+        padding: 0 1rem;
+    }
+
+    .bio table {
+        caption-side: top;
+    }
+
+    .bio table tr td:first-of-type {
+        padding-top: 0.3em;
+        font-weight: bold;
+    }
+
+    .bio table tr td:last-of-type {
+        padding-bottom: 0.3em;
+        font-style: italic;
+        font-size: 0.8em;
+    }
+
+    .bio table tr td:last-of-type::after {
+        content: " hrs/wk";
+    }
 }
