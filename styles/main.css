@@ -402,3 +402,94 @@ footer hr {
         content: " hrs/wk";
     }
 }
+
+@media screen and (max-width: 850px) {
+    .favourites {
+        flex-direction: column;
+    }
+
+    .favourites input+label {
+        order: 0;
+        color: burlywood;
+    }
+
+    .favourites input+label>h3 {
+        color: burlywood;
+        border-bottom: 3px solid rgb(0, 0, 0, 0);
+        margin-bottom: 0;
+    }
+
+    .favourites input+label>h3:hover {
+        border-bottom: 3px solid #FF2511;
+        color: #FF2511;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    #top ul {
+        flex-direction: column;
+        align-items: center;
+        height: 0;
+        overflow: hidden;
+    }
+
+    #top a {
+        padding-top: 0.5em;
+        border-top: none;
+    }
+
+    #top a:hover {
+        border-top: none;
+        text-decoration: underline;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .sandwich-icon {
+        display: block;
+        width: 40px;
+        height: 25px;
+        border-top: 5px solid #710019;
+        margin: 1em auto;
+    }
+
+    .sandwich-icon:hover {
+        cursor: pointer;
+    }
+
+    .sandwich-icon::after,
+    .sandwich-icon::before {
+        content: "";
+        display: block;
+        width: 40px;
+        border-top: 5px solid #710019;
+        position: absolute;
+    }
+
+    .sandwich-icon label {
+        position: relative;
+    }
+
+    .sandwich-icon::before {
+        top: 10px;
+    }
+
+    .sandwich-icon::after {
+        top: 30px;
+    }
+
+}
+
+@media screen and (min-width: 726px) {
+    #top nav input:first-of-type {
+        display: none;
+    }
+
+    .sandwich-icon {
+        display: block;
+    }
+
+}
