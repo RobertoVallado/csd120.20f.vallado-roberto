@@ -431,6 +431,7 @@ footer hr {
         flex-direction: column;
         align-items: center;
         height: 0;
+        transition: height 500ms;
         overflow: hidden;
     }
 
@@ -454,6 +455,7 @@ footer hr {
         height: 25px;
         border-top: 5px solid #710019;
         margin: 1em auto;
+        transition: border-top 200ms;
     }
 
     .sandwich-icon:hover {
@@ -467,6 +469,7 @@ footer hr {
         width: 40px;
         border-top: 5px solid #710019;
         position: absolute;
+        transition: transform 200ms;
     }
 
     .sandwich-icon label {
@@ -481,6 +484,30 @@ footer hr {
         top: 30px;
     }
 
+    #top input[type=checkbox]:checked+label+ul {
+        height: 200px !important;
+        overflow: visible !important;
+        transition: height 200ms;
+    }
+
+
+    #top input[type=checkbox]:checked+.sandwich-icon {
+        border-top: 5px solid transparent;
+        transition: border-top 200ms;
+    }
+
+    #top input[type=checkbox]:checked+.sandwich-icon::before {
+        border-top: 5px solid #710019;
+        transform: rotate(45deg);
+        top: 30px;
+        /* SPIN ME */
+    }
+
+    #top input[type=checkbox]:checked+.sandwich-icon::after {
+        border-top: 5px solid #710019;
+        transform: rotate(-45deg)
+            /* SPIN ME */
+    }
 }
 
 @media screen and (min-width: 726px) {
@@ -491,5 +518,4 @@ footer hr {
     .sandwich-icon {
         display: block;
     }
-
 }
