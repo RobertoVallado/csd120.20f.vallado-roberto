@@ -11,4 +11,4 @@ This repository contains my lab work for the Sault College course CSD120
 5. Lab #5: Introduction to CSS
 6. Lab #6: Styling content
 7. Lab #7: CSS LayOut
-8. Lab #8: Responsive Design
+8. Lab #8: Responsive Design 
