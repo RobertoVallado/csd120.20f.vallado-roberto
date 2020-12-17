@@ -472,7 +472,7 @@ footer hr {
         transition: transform 200ms;
     }
 
-    .sandwich-icon {
+    .sandwich-icon label {
         position: relative;
     }
 
